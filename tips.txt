@@ -1,0 +1,8 @@
+Use camelCase for most variables and function names.
+Use PascalCase for classes and constructors.
+Use UPPERCASE_SNAKE_CASE for constants.
+Choose meaningful names that describe the data or purpose.
+Avoid reserved keywords as variable names.
+Be consistent with naming conventions.
+Use prefixes like is or has for boolean variables.
+Avoid starting with numbers or using special characters.

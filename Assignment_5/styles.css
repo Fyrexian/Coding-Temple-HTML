@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.container::after {
+  content: "Default";
+  display: block;
+  font-size: 2em;
+  text-align: center;
+  padding: 60px;
+  border: 3px solid black;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 599px) {
+  .container::after {
+    background-color: blue;
+    content: "Mobile Device";
+    color: white;
+    font-size: 1.5em;
+  }
+}
+
+/* Tablet View */
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .container::after {
+    background-color: lightgreen;
+    content: "Tablet Device";
+    color: white;
+    border: 3px dotted black;
+  }
+}
+
+/* Desktop View */
+@media only screen and (min-width: 900px) {
+  .container::after {
+    background-color: lightcoral;
+    content: "Desktop Device";
+    color: white;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+}
