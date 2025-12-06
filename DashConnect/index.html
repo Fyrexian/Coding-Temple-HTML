@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Dashboard Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="main-title">JavaScript API Dashboard</h1>
+    <div class="grid-container">
+      <section class="grid-item" id="dog-api">
+        <h2>🐶 Random Dog</h2>
+        <button id="single-dog-button">Get Dog</button>
+        <div class="output" id="dog-output"></div>
+      </section>
+
+      <section class="grid-item" id="cat-api">
+        <h2>🐱 Random Cat</h2>
+        <button id="single-cat-button">Get Cat</button>
+        <div class="output" id="cat-output"></div>
+      </section>
+
+      <section class="grid-item" id="weather-api">
+        <h2>☀️ Weather Info</h2>
+        <div>
+          <input
+            type="number"
+            id="latitude"
+            placeholder="Latitude"
+            step="0.01"
+          />
+          <input
+            type="number"
+            id="longitude"
+            placeholder="Longitude"
+            step="0.01"
+          />
+          <button id="weather-button">Get Weather</button>
+        </div>
+        <div class="output" id="weather-output"></div>
+      </section>
+
+      <section class="grid-item" id="currency-api">
+        <h2>💱 Currency Rates</h2>
+        <div>
+          <input
+            type="number"
+            id="usd-amount"
+            placeholder="Enter USD amount"
+            step="0.01"
+          />
+          <button id="currency-button">Convert to EUR</button>
+        </div>
+        <div class="output" id="currency-output"></div>
+      </section>
+
+      <section class="grid-item" id="movies-api">
+        <h2>🎮 Trending Movies</h2>
+        <button id="movies-button">Get Movies</button>
+        <div class="output" id="movies-output"></div>
+      </section>
+
+      <section class="grid-item" id="github-api">
+        <h2>🧑‍💻 GitHub User</h2>
+        <div>
+          <input
+            type="text"
+            id="github-username"
+            placeholder="Enter GitHub username"
+          />
+          <button id="github-button">Get User</button>
+        </div>
+        <div class="output" id="github-output"></div>
+      </section>
+
+      <section class="grid-item" id="joke-api">
+        <h2>🤣 Random Joke</h2>
+        <button id="joke-button">Get Joke</button>
+        <div class="output" id="joke-output"></div>
+      </section>
+
+      <section class="grid-item" id="public-api">
+        <h2>🔲 QR Code Generator</h2>
+        <div>
+          <input
+            type="text"
+            id="qr-text"
+            placeholder="Enter text for QR code"
+          />
+          <button id="qr-button">Generate QR</button>
+        </div>
+        <div class="output" id="publicapi-output"></div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
